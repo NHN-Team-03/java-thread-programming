@@ -1,14 +1,15 @@
 package quiz01;
 
 public class Ticker extends Thread {
-
     long millis;
     int nanos;
+
     public Ticker(String input) {
-        if (input.charAt(input.length() - 1 ) == 'n') {
-            nanos = Integer.parseInt(input);
+        if (input.charAt(input.length() - 1) == 'n') {
+            nanos = Integer.parseInt(input.substring(0, input.length() - 2));
+        } else {
+            millis = Long.parseLong(input);
         }
-        millis = Long.parseLong(input);
     }
 
     @Override
