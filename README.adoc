@@ -1,0 +1,4 @@
+= Team 3 - Thread Study
+
+== 📚 학습 
+https://github.com/nhnacademy-bootcamp/java-thread-programming
