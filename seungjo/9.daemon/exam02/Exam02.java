@@ -8,6 +8,8 @@ public class Exam02 {
         Thread.sleep(5000);
         worker.stop();
 
+        Thread.sleep(2000);
+
         System.out.println("Main Thread terminated");
     }
 }
