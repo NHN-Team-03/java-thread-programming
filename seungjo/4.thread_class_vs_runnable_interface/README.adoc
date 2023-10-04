@@ -1,0 +1,21 @@
+= thread 구현 비교
+
+* Thread class, Runnable interface의 차이는?
+* class의 상속이냐, interface의 구현이냐
+
+
+[cols="2*^", auto-width, options=header]
+|===
+| Class 확장
+| Interface 구현
+
+|multiple inheritance을 지원하지 않으므로, 다른 class로부터의 추가적인 확장이 불가능하다.
+|Interface에 대한 multiple inheritance가 지원되고, 구현된 후에도 해당 class의 확장이 가능하다
+
+|Instance 생성 후 바로 실행할 수 있다
+|Instance 생성 후 바로 사용할 수 없고, 추가적인 Thread object가 요구된다.
+
+|간단한 class라도 별도의 class 정의가 필요하다.
+|Runnable interface는 functional interface로 Lambda로 구현 가능하다.
+
+
